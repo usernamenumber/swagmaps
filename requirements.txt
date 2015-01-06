@@ -2,3 +2,4 @@ Django
 django-registration
 django-registration-defaults
 git+https://github.com/tehmaze/django-pam
+gunicorn
