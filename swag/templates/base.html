@@ -7,7 +7,12 @@
 		{% block scripts %}{% endblock %}
 	</head>
 	<body>
-	{% block body %}
+	{% block content %}
+        {% if user.is_authenticated %}
+            <div>Hello, {{ user.username }}</div>
+        {% else %}
+            <div> Not logged in? user = {{ user.username }}</div>
+        {% endif %}
 		<div class="heading">{% block heading %}{% endblock %}</div>
 		<div class="subheading">{% block subheading %}{% endblock %}</div>
 		<div class="main">{% block main %}{% endblock %}</div>
