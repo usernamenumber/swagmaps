@@ -2,4 +2,3 @@ Django
 django-registration
 django-registration-defaults
 git+https://github.com/tehmaze/django-pam
-git+https://github.com/mjumbewu/django-proxy
