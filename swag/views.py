@@ -1,5 +1,4 @@
 from django.shortcuts import render
-import proxy
 from django.templatetags.static import static
 from django.template import Template
 from django.template import Context
@@ -41,7 +40,3 @@ def map_view(request,map_id):
             "swag": swag.settings,
         }
     )
-
-def proxy_test(request):
-    remoteurl = swag.settings.XAPI_URL
-    return proxy.views.proxy_view(request, remoteurl)
